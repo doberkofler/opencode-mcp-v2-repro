@@ -1,0 +1,95 @@
+{
+	"issue": "https://github.com/anomalyco/opencode/issues/45333",
+	"startedAt": "2026-10-18T10:19:21.094Z",
+	"opencodeVersion": "2.0.32",
+	"workspace": "<workspace>",
+	"providerBaseUrl": "http://127.0.0.1:52519/v1",
+	"serverBaseUrl": "http://127.0.0.1:52520",
+	"mcp": {
+		"location": {
+			"directory": "<workspace>"
+		},
+		"data": [
+			{
+				"name": "reproping",
+				"status": {
+					"status": "connected"
+				}
+			}
+		]
+	},
+	"session": {
+		"id": "ses_eb17a102fffeZk3ApBwRG44upp",
+		"created": {
+			"id": "ses_eb17a102fffeZk3ApBwRG44upp",
+			"projectID": "54e0e1b8f8f88712ea2570ea09b0921f4a10ca21",
+			"model": {
+				"id": "repro-probe",
+				"providerID": "mock",
+				"variant": "default"
+			},
+			"cost": 0,
+			"tokens": {
+				"input": 0,
+				"output": 0,
+				"reasoning": 0,
+				"cache": {
+					"read": 0,
+					"write": 0
+				}
+			},
+			"time": {
+				"created": 1792318762962,
+				"updated": 1792318762962
+			},
+			"title": "MCP tool materialization repro",
+			"subpath": "../../../../../../..<workspace>",
+			"location": {
+				"directory": "<workspace>"
+			}
+		}
+	},
+	"requests": [
+		{
+			"capturedAt": "2026-10-18T10:19:23.030Z",
+			"model": "repro-probe",
+			"stream": true,
+			"toolNames": [
+				"edit",
+				"glob",
+				"grep",
+				"question",
+				"read",
+				"shell",
+				"skill",
+				"subagent",
+				"webfetch",
+				"websearch",
+				"write",
+				"execute"
+			],
+			"pingToolPresent": false,
+			"executeToolPresent": true,
+			"mcpServerMentionedInMessages": false,
+			"messageRoles": [
+				"system",
+				"user"
+			]
+		}
+	],
+	"verdict": "reproduced",
+	"reasons": [
+		"No provider request advertised the MCP ping tool, although the MCP server was connected and exposed it.",
+		"The agent loop never produced a tool result for the MCP tool."
+	],
+	"mcpCatalog": {
+		"tools": [
+			"example_ping"
+		]
+	},
+	"assistantText": "NO_PING_TOOL",
+	"opencodeStdout": "server listening on http://127.0.0.1:52520\nserver password <redacted> INFO (#694): spawning process {\n  command: \"$HOME/.local/share/fnm/node-versions/v26.10.0/installation/bin/node\",\n  args: [ \"<repro-dir>/mcp-server.mjs\" ],\n  cwd: \"<workspace>\",\n}\n[12:19:23.028] INFO (#1212): spawning process {\n  command: \"$HOME/.local/share/fnm/node-versions/v26.10.0/installation/bin/node\",\n  args: [ \"<repro-dir>/mcp-server.mjs\" ],\n  cwd: \"<workspace>\",\n}\n",
+	"opencodeStderr": "",
+	"finishedAt": "2026-10-18T10:19:23.347Z",
+	"keptWorkspace": false
+}

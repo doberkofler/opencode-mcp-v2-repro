@@ -1,0 +1,14 @@
+{
+	"name": "opencode-mcp-v2-repro",
+	"private": true,
+	"version": "1.0.0",
+	"description": "Minimal reproduction for OpenCode issue #45333: V2 session runner omits MCP tools from model requests.",
+	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"repro": "node repro.mjs",
+		"repro:keep": "node repro.mjs --keep"
+	}
+}

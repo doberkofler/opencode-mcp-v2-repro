@@ -1,0 +1,14 @@
+server listening on http://127.0.0.1:52520
+server password <redacted>
+[12:19:22.848] INFO (#694): spawning process {
+  command: "$HOME/.local/share/fnm/node-versions/v26.10.0/installation/bin/node",
+  args: [ "<repro-dir>/mcp-server.mjs" ],
+  cwd: "<workspace>",
+}
+[12:19:23.028] INFO (#1212): spawning process {
+  command: "$HOME/.local/share/fnm/node-versions/v26.10.0/installation/bin/node",
+  args: [ "<repro-dir>/mcp-server.mjs" ],
+  cwd: "<workspace>",
+}
+
+

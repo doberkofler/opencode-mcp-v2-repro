@@ -1,0 +1,57 @@
+{
+	"data": [
+		{
+			"id": "msg_14e85efdd001A5JOJjT5hnTkzV",
+			"time": {
+				"created": 1792318763021
+			},
+			"text": "Call example_ping and show me the result. Call the tool, do not explain first.",
+			"type": "user"
+		},
+		{
+			"id": "msg_14e85f010001K586wwVfvF5ZVi",
+			"time": {
+				"created": 1792318763027,
+				"streamed": 1792318763035,
+				"completed": 1792318763035
+			},
+			"type": "assistant",
+			"agent": "build",
+			"model": {
+				"id": "repro-probe",
+				"providerID": "mock",
+				"variant": "default"
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "NO_PING_TOOL"
+				}
+			],
+			"finish": "stop",
+			"rawFinish": "stop",
+			"cost": 0,
+			"tokens": {
+				"input": 0,
+				"output": 0,
+				"reasoning": 0,
+				"cache": {
+					"read": 0,
+					"write": 0
+				}
+			}
+		},
+		{
+			"id": "msg_14e85f01d001583NHI0g24D68v",
+			"time": {
+				"created": 1792318763037
+			},
+			"type": "idle",
+			"outcome": "succeeded"
+		}
+	],
+	"cursor": {
+		"previous": "eyJpZCI6Im1zZ18xNGU4NWVmZGQwMDFBNUpPSmpUNWhuVGt6ViIsIm9yZGVyIjoiYXNjIiwiZGlyZWN0aW9uIjoicHJldmlvdXMifQ",
+		"next": "eyJpZCI6Im1zZ18xNGU4NWYwMWQwMDE1ODNOSEkwZzI0RDY4diIsIm9yZGVyIjoiYXNjIiwiZGlyZWN0aW9uIjoibmV4dCJ9"
+	}
+}

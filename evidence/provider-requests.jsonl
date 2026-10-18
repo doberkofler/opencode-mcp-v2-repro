@@ -1,0 +1,1 @@
+{"capturedAt":"2026-10-18T10:19:23.030Z","model":"repro-probe","stream":true,"toolNames":["edit","glob","grep","question","read","shell","skill","subagent","webfetch","websearch","write","execute"],"pingToolPresent":false,"executeToolPresent":true,"mcpServerMentionedInMessages":false,"messageRoles":["system","user"]}
